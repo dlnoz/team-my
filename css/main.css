@@ -51,6 +51,9 @@ body{
     .header-logo-wrapper{
         gap: 40px;
     }
+    .header-menu-btn{
+        display: none;
+    }
 }
 
 
@@ -130,14 +133,19 @@ body{
 /* Hero Tablet start */
 
 
+
 .hero-section{
     padding-bottom: 250px;
+    background-repeat: no-repeat;
+    align-items: end;
 }
 .hero{
     display: flex;
     align-items: start;
     justify-content: space-between;
 }
+
+
 .hero-title-wrapper{
     width: 600px;
 }
