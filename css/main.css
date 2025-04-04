@@ -38,23 +38,7 @@ body{
     display: none;
 }
 
-/* Header tablet start */
 
-@media  (max-width: 768px){
-    .header{
-        padding: 64px 0 112px;
-    }
-    .header-logo-img{
-        width: 127px;
-        height: 32px;
-    }
-    .header-logo-wrapper{
-        gap: 40px;
-    }
-    .header-menu-btn{
-        display: none;
-    }
-}
 
 
 .site-header{
@@ -72,7 +56,6 @@ body{
     gap: 80px;
 }
 
-/* Header Mobile start */
 
 
 .header-list{
@@ -116,8 +99,23 @@ body{
     color: #fff;
 }
 
+/* Header Tablet start */
+@media (max-width:768px){
+    .site-header{
+        padding: 64px 0 112px;
+    }
+    .header-logo-img{
+        width: 127px;
+        height: 32px;
+    }
+    .header-logo-wrapper{
+        gap: 40px;
+    }
+}
+/* Header Tablet end */
 
 
+/* Header Mobile start */
 @media (max-width:583px){
     .site-header{
         padding: 48px 0 80px;
@@ -125,13 +123,11 @@ body{
     .header-list, .header-contact-link{
         display: none;
     }
-    .header-contact-menu{
+    .header-menu-btn{
         display: block;
     }
 }
-
-/* Hero Tablet start */
-
+/* Header Mobile end */
 
 
 .hero-section{
@@ -186,7 +182,10 @@ body{
     background-color: #012F34;
     padding: 140px 0;
 }
-@media (max-width: 768px){
+
+
+/* Hero Tablet start */
+@media (max-width:768px){
     .hero{
         flex-direction: column;
         text-align: center;
@@ -202,18 +201,19 @@ body{
         margin-bottom: 24px;
         font-size: 64px;
         line-height: 56px;
-        letter-spacing: 0%;
+        letter-spacing: 0px;
     }
-    .hero-text-wrapper{
+    .hero-text{
         font-size: 15px;
         line-height: 28px;
         letter-spacing: 0px;
     }
 }
+/* Hero Tablet end */
+
 
 /* Hero Mobile start */
-
-@media (max-width: 583px){
+@media (max-width:583px){
     .hero{
         padding-bottom: 197px;
     }
@@ -222,13 +222,15 @@ body{
         font-size: 40px;
         line-height: 40px;
         letter-spacing: 0px;
+        
     }
 }
-@media (max-width: 391px){
+@media (max-width:391px){
     .hero{
         background-size: contain;
     }
 }
+/* Hero Mobile end */
 
 
 
@@ -272,6 +274,74 @@ body{
 .build-item-subtext{
     color: #fff;
 }
+
+
+
+/* Build Tablet start */
+@media (max-width:884px){
+    .build-section{
+        padding: 100px 73px;
+        background-position: right top;
+    }
+    .build{
+        flex-direction: column;
+        gap: 64px;
+    }
+    .build-line{
+        margin-bottom: 32px;
+    }
+    .build-title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+    .build-title-wrapper{
+        width: 100%;
+        max-width: 445px;
+    }
+    .build-list{
+        margin-top: 0;
+    }
+    .build-item-content-wrapper{
+        width: 100%;
+    }
+    .build-item-content-wrapper > h3{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0px;
+    }
+    .build-item-content-wrapper > p{
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+    }
+}
+/* Build Tablet end */
+
+/* Build Mobile start  */
+@media (max-width:537px){
+    .build-section{
+        padding: 64px 0;
+    }
+    .build{
+        gap: 56px;
+    }
+    .build-title-wrapper{
+        width: 80% !important;
+    }
+    .build-list{
+        gap: 48px;
+    }
+    .build-item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .build-item-content-wrapper > h3{
+        margin-bottom: 8px;
+    }
+}
+/* Build Mobile end  */
+
 
 
 .last-section{
@@ -441,3 +511,37 @@ body{
     color: #fff;
     opacity: 60%;
 }
+
+/* stories tablet start */
+@media (max-width:668px){
+    .stories-section{
+        padding: 100px 73px;
+    }
+    .stories-title-wrapper{
+        margin-bottom: 48px;
+    }
+    .stories-title-wrapper>h2 {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 0px;
+    }
+    .stories-list{
+        flex-direction: column;
+        gap: 38px;
+    }
+    .stories-item{
+        max-width: 100%;
+    }
+    .stories-item > p {
+        margin-bottom: 16px;
+    }
+}
+/* stories tablet end */
+
+/* stories mobile start */
+@media (max-width:541px){
+    .stories-section{
+        padding: 140px 0;
+    }
+}
+/* stories mobile end */
